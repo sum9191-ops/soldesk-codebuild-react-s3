@@ -43,3 +43,12 @@ phases:
           echo "CloudFront 배포 ID가 없으므로 캐시 무효화는 건너뜁니다."
         fi
       - 'echo "✅ 배포 완료"'
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: dist
+
+cache:
+  paths:
+    - "/root/.npm/**/*"
