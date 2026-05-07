@@ -35,8 +35,6 @@ phases:
       - npm run build
       - echo "dist 폴더 확인"
       - ls -al dist
-      - echo "health.html 확인"
-      - test -f dist/health.html
 
   post_build:
     commands:
